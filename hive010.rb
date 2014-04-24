@@ -1,16 +1,14 @@
-require 'formula'
-
 class Hive < Formula
-  homepage 'http://hive.apache.org'
-  url 'http://archive.apache.org/dist/hive/hive-0.10.0/hive-0.10.0-bin.tar.gz'
-  sha1 'b9b9f9f1b6c5e98f2c7197ac40caaafbc4bec66a'
+  homepage "https://hive.apache.org"
+  url "https://archive.apache.org/dist/hive/hive-0.10.0/hive-0.10.0-bin.tar.gz"
+  sha1 "b9b9f9f1b6c5e98f2c7197ac40caaafbc4bec66a"
 
-  depends_on 'hadoop'
+  depends_on "hadoop"
 
   def install
     rm_f Dir["bin/*.bat"]
     libexec.install %w[bin conf examples lib ]
-    libexec.install Dir['*.jar']
+    libexec.install Dir["*.jar"]
     bin.write_exec_script Dir["#{libexec}/bin/*"]
   end
 
