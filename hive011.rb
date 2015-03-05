@@ -1,4 +1,4 @@
-class Hive < Formula
+class Hive011 < Formula
   homepage "https://hive.apache.org"
   url "https://archive.apache.org/dist/hive/hive-0.11.0/hive-0.11.0-bin.tar.gz"
   sha1 "c584a74c2dcae66d8777347906aaedbeb7793bbf"
