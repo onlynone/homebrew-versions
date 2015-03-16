@@ -1,9 +1,10 @@
 class Hive010 < Formula
   homepage "https://hive.apache.org"
   url "https://archive.apache.org/dist/hive/hive-0.10.0/hive-0.10.0-bin.tar.gz"
-  sha1 "b9b9f9f1b6c5e98f2c7197ac40caaafbc4bec66a"
+  sha256 "9a99ef0545758accaa30c0ede524bcaaaaeee12b115a9ca0ebf96fa72060abee"
 
   depends_on "hadoop"
+  depends_on :java
 
   def install
     rm_f Dir["bin/*.bat"]
